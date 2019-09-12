@@ -24,14 +24,14 @@ body {
 .grid-container {
 
     display: grid;
-    grid-template-columns: repeat(7, 90px);
+    grid-template-columns: repeat(7, 60px);
     justify-content: center;
     margin-top: 5%;
 }
 
 .grid {
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     border: 1px solid black;
 }
 
