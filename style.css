@@ -21,7 +21,7 @@ body {
     background-color: chocolate;
 }
 
-.grid-container {
+#grid-container {
 
     display: grid;
     grid-template-columns: repeat(7, 60px);
