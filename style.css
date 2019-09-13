@@ -21,7 +21,7 @@ body {
     background-color: chocolate;
 }
 
-#grid-container {
+#game_board {
 
     display: grid;
     grid-template-columns: repeat(7, 60px);
