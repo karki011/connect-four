@@ -1,71 +1,12 @@
 "use strict";
-//game board  col and row
-// let gameBoard = [];
-const game_board = document.getElementById("game_board");
 
-let gameboard = [
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0]
-]
-
-const drawBoard = function () {
-    for (let i = 1; i <= gameboard.length; i++) {
-        let gridDiv = document.createElement('div');
-        gridDiv.className = "grid";
-        gridDiv.id = "grid"
-        game_board.appendChild(gridDiv);
-
-        for (let j = 1; j <= gameboard.length; j++) {
-            let gridDiv = document.createElement('div');
-            gridDiv.className = "grid";
-            gridDiv.id = "grid"
-            game_board.appendChild(gridDiv);
-        }
-    }
-}
-drawBoard();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const grid_container = document.getElementById("grid-container");
-
-// const createGrid = function (columns, rows) {
-//     for (i = 1; i <= (columns * rows); i++) {
-//         let gridDiv = document.createElement('div');
-//         gridDiv.className = "grid";
-//         gridDiv.id = "grid"
-//         grid_container.appendChild(gridDiv);
-//     }
-// }
-// createGrid(7, 6);
+//TODO Display a red or black disc.
+//TODO Stack red and black discs in a column using a flex box layout.
+//TODO Display a full board consisting of 7 columns.
+//TODO Set a click handler function for each column that adds an additional disc.
+//TODO Take turns! Toggle the color of each successive disc added.
+//TODO Keep track of what color disc is at each position in the board. You should be able to console.log() debugging output after each move showing the state of the board.
+//TODO Once a column is full (has 6 discs), don't allow any more discs to be added.
+//TODO Check whether the last disc added completed a four-in-a-row within the column (vertically).
+//TODO Check whether the last disc added completed four-in-a-row horizontally.
+//TODO Check whether the last disc added completed four-in-a-row on either an upward- or downward-sloping diagonal.

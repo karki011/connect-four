@@ -22,7 +22,6 @@ body {
 }
 
 #game_board {
-
     display: grid;
     grid-template-columns: repeat(7, 60px);
     justify-content: center;
@@ -35,11 +34,3 @@ body {
     border: 1px solid black;
 }
 
-footer {
-    position: fixed;
-    position: fixed;
-    bottom: 0;
-    height: 90px;
-    background: rgb(104, 95, 88);
-    width: 100%;
-}
