@@ -6,7 +6,7 @@
 }
 
 header {
-    background: rgb(8, 193, 226);
+    background: rgb(77, 103, 107);
     position: sticky;
     top: 0;
 }
@@ -18,7 +18,7 @@ header>h1 {
 }
 
 body {
-    background-color: chocolate;
+    background-color: rgb(196, 187, 181);
 }
 
 #game_board {
@@ -32,5 +32,6 @@ body {
     height: 60px;
     width: 60px;
     border: 1px solid black;
+    border-radius: 50%;
 }
 
