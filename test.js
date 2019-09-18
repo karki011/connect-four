@@ -1,27 +1,29 @@
+let gameBoard;
+const huPlayer = '0';
+const aiPlayer = 'X';
 
-let currentPlayer = "red";
-let playerRedSelections = [];
-let playerBlackSelections = [];
+const cells = document.querySelectorAll('.disk');
 
-function handleClick (e) {
-    const cell = e.target;
-    console.log(cell);
-
-    cell.innerHTML = currentPlayer;
-    if (currentPlayer === "red") {
-        playerSelections = playerRedSelections;
-        nextPlayer = "black";
-    } else {
-        playerSelections = playerBlackSelections;
-        playerBlackSelections.className = "black";
-
-        nextPlayer = "red";
+function startGame() {
+    document.querySelector(".endgame").style.display = "none";
+    gameBoard = Array.from(Array(42).keys());
+    console.log(gameBoard);
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = '';
+        cells[i].style.removeProperty('background');
+        cells[i].addEventListener('click', turnClick, false);
     }
-    playerSelections.push(Number(cell.id));
-    currentPlayer = nextPlayer;
-};
-const cells = document.querySelectorAll("td");
 
-for (let i = 0; i < cells.length; i++) {    
-    cells[i].addEventListener("click", handleClick);
 }
+startGame(); //main start game function
+function turnClick(square) {
+    console.log(square.target.id);
+    turn(square.target.id, huPlayer);
+}
+
+function turn(squareId, player) { // check who is playing and if the game is won or not
+    gameBoard[squareId] = player;
+    document.getElementById(squareId).innerText = player;
+}
+
+
