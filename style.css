@@ -126,8 +126,17 @@ td{
 }
 
 footer{
-    height: 50px;
-    background-color: #070707;
     width: 100%;
-    
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    background-color: black;
+}
+footer>h3 {
+    color: rgb(212, 209, 209);
+    text-align: center;
+}
+footer>h3>p {
+    font-size: 16px;
+    color: lightgrey;
 }
