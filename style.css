@@ -87,14 +87,21 @@ td{
 
 .player0 {
     background-color: #DDDDDD; 
+    background-image: url('./img/kenzie.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .player1 {
-    background-color: #FF0000;
+    background-image: url('./img/mattHead.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-
 .player2 {
-    background-color: rgb(10, 10, 10);	
+    /* background-color: rgb(10, 10, 10); */
+    background-image: url('./img/chookiHead.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .board_square {
