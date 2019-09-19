@@ -62,3 +62,6 @@ function checkForWin() {
     }
 
 }
+
+// got win condition reference
+// https://stackoverflow.com/questions/33181356/connect-four-game-checking-for-wins-js
