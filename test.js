@@ -13,7 +13,6 @@ function startGame() {
         cells[i].style.removeProperty('background');
         cells[i].addEventListener('click', turnClick, false);
     }
-
 }
 startGame(); //main start game function
 function turnClick(square) {
@@ -27,3 +26,9 @@ function turn(squareId, player) { // check who is playing and if the game is won
 }
 
 
+// TODO horizontally
+// TODO vertically
+// TODO diagonally
+
+
+// TODO Tie game
