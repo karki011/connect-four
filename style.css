@@ -1,60 +1,133 @@
-/* * {
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0 auto;
+    font-family: Asap, sans-serif;
 }
-
-header {
-    background: rgb(77, 103, 107);
-    position: sticky;
-    top: 0;
-}
-
-header>h1 {
-    text-align: center;
-    padding: 20px;
-    font-size: 4rem;
-}
-
 body {
-    background-color: rgb(196, 187, 181);
-}
-
-#game_board {
-    display: grid;
-    grid-template-columns: repeat(7, 60px);
-    justify-content: center;
-    margin-top: 5%;
-}
-
-.grid {
-    height: 60px;
-    width: 60px;
-    border: 1px solid black;
-    border-radius: 50%;
-} */
-.red{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: red;
-}
-td {
-    border: 1px solid blue;
-    width: 50px;
-    height:50px;
-    color: red;
-      font-size: 20px;
-  
-  }
-  td:hover {
-    background: orange;
-  }
-  table {
-    border: 1px solid green;
     margin: 0 auto;
-    color: red;
-    
+    padding: 0;
+    background-color: #303853;
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+    background: rgb(48,56,83); 
+}
+
+header{
+    height: 90px;
+    background-color: black
+}
+header>h1{
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+button{
+    cursor: pointer;
+    height: 28px;
+    padding: 3px;
+}
+td{
+    background-color: #224c52
+}
+#begin_game{
+    background-color: greenyellow;
     font-size: 20px;
-  }
+
+}
+#begin_game:hover {
+    box-shadow: 0 0 10px #058d49 ;
+}
+.beginResetButton{
+    margin-top: 20px;    
+}
+#reset{
+    background-color: red;
+    font-size: 20px;
+}
+#reset:hover {
+    box-shadow: 0 0 10px #f35858 ;
+}
+#gameboard{
+    padding: 20px;
+}
+#game_info{
+    font-size: 16px;
+    padding: 3px;
+}
+.click_button {
+    height: 42px;
+    width: 42px;
+    border-radius: 24px;
+    background-color: rgba(255,0,0,1);
+    cursor: pointer;
+}
+
+#game_table{
+    margin: 0 auto;
+}
+.drop{
+    width: -webkit-fill-available;
+    border-radius: 4px;
+}
+.drop:hover{
+    box-shadow: 0 0 14px #0bc7e0 ;
+}
+.piece {
+    height: 45px;
+    width: 45px;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.player0 {
+    background-color: #DDDDDD; 
+    background-image: url('./img/kenzie.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.player1 {
+    background-image: url('./img/mattHead.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.player2 {
+    /* background-color: rgb(10, 10, 10); */
+    background-image: url('./img/chookiHead.png');	
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.board_square {
+    border: 1px solid #555555;
+    height: 50px;
+    width: 50px;
+}
+.endgame{
+    display: none;
+    width: 200px;
+    top: 35%;
+    background-color: rgba(63, 205, 106, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+footer{
+    height: 50px;
+    background-color: #070707;
+    width: 100%;
+    
+}
