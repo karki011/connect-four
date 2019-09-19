@@ -6,11 +6,15 @@
 // | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
 
 function drawBoard() {
+    console.log("finish drawBoard(). ");
     checkForWin(); //check to see if any player has won.
+    console.log('checkForWin():', checkForWin())
     for (col = 0; col<=6; col++) {
         for (row=0; row<=5; row++) {
             //Set the inner HTML of the square (a td) to be a span with the class of 'piece' and 'player' + the value of that 
-            document.getElementById('square_'+row+'_'+col).innerHTML ="<span class='piece player"+gameboard[row][col]+"'> </span>";
+            let draw =document.getElementById('square_'+row+'_'+col);
+            draw.innerHTML ="<span class='piece player"+gameboard[row][col]+"'> </span>";
         }	
     }
+    
 }

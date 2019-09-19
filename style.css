@@ -117,3 +117,10 @@ td{
     color: white;
     font-size: 2em;
 }
+
+footer{
+    height: 50px;
+    background-color: #070707;
+    width: 100%;
+    
+}

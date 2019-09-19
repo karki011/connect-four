@@ -6,6 +6,8 @@
 // | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
 
 function checkForWin() {
+    console.log("runing checkforwin()");
+    
     //check left-to-right
     for (i=1; i<=2; i++) {//this will check for each player
        
