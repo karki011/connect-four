@@ -2,8 +2,8 @@ let gameboard = [];
 let game_active = false;
 let active_player = 0;
 let player_color = []; 
-player_color[1] = "red";
-player_color[2] = "black";
+player_color[1] = "Matt";
+player_color[2] = "Chok";
 let diskCount = 0
 
 

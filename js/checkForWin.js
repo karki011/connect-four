@@ -60,6 +60,10 @@ function checkForWin() {
             }
         }
     }
+    //tie check
+    if(diskCount === 85){
+        alert('Tie ')
+    }
 
 }
 
