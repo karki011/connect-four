@@ -31,6 +31,7 @@ function beginGame() {
 function endGame(winningPlayer) {
     console.log("Inside endGame function().");
     document.querySelector(".endgame").style.display = "block";
-    game_active = false;
     document.getElementById('text').innerHTML = "Winner: Player " + winningPlayer;
+    game_active = false;
+
 }

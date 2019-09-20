@@ -6,13 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/drawBoard.js"></script>
+    <script defer src="./js/turn.js"></script>
+    <script defer src="./js/placeDisc.js"></script>
+    <script defer src="./js/checkForWin.js"></script>
     <title>Connect four</title>
 </head>
 
 <body>
+
     <header>
         <h1>Connect Four</h1>
     </header>
+    <div>
+        <a href="#openModal">Games Rules</a>
+
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+
+                <h2>Game description</h2>
+
+                <p>
+                    This game is played on a vertical board wich has seven hollow columns and six rows.
+                </p>
+                <p> In short, it´s a vertical board with 42 windows distributed in 6 rows and 7 columns.
+
+                </p>
+
+                <h2>Objective</h2>
+
+                <p>The aim for both players is to make a straight line of four own pieces; the line can be vertical,
+                    horizontal
+                    or
+                    diagonal.
+                </p>
+                <h2>How the game goes on</h2>
+                <p>
+                    Before starting, players decide randomly which of them will be the beginner; moves are made
+                    alternatively,
+                    one
+                    by
+                    turn.
+                </p>
+                <p>
+                    The winner is the first player who gets a straight line made with four own pieces and no gaps
+                    between them.
+                </p>
+            </div>
+        </div>
+    </div>
     <div class="beginResetButton">
         <button id="begin_game" onclick="beginGame();">Begin Game</button>
         <button id="reset" onClick="document.location.reload(true)">Reset</button>
@@ -33,12 +77,6 @@
                 </tr>
             </thead>
             <script src="./js/insertTableRow.js"></script>
-            <script src="./js/main.js" defer></script>
-            <script src="./js/drawBoard.js" defer></script>
-            <script src="./js/turn.js" defer></script>
-            <script src="./js/placeDisc.js" defer></script>
-            <script src="./js/checkForWin.js" defer></script>
-
         </table>
 
         <div class="endgame">
@@ -46,11 +84,17 @@
         </div>
 
     </div>
+
     <footer>
         <h3>Team members:
             <p>Subash Karki, Dan Birkbeck, Oprah Keys, and Evan Ochs </p>
         </h3>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="openPop.js"></script>
+
+
 </body>
 
 </html>
