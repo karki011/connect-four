@@ -4,7 +4,7 @@ let active_player = 0;
 let player_color = []; 
 player_color[1] = "Matt";
 player_color[2] = "Chok";
-let diskCount = 0
+let diskCount = 0;
 
 
 
@@ -31,7 +31,12 @@ function beginGame() {
 function endGame(winningPlayer) {
     console.log("Inside endGame function().");
     document.querySelector(".endgame").style.display = "block";
-    document.getElementById('text').innerHTML = "Winner: Player " + winningPlayer;
+    document.getElementById('text').innerHTML = "Winner:  " + winningPlayer;
+    document.getElementById('text').innerHTML = 
+    "Winner:  "+ 
+    winningPlayer + "</br>"+
+    "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
+
     game_active = false;
 
 }

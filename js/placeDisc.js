@@ -14,5 +14,5 @@ function drop(col) {
             return true;
         } 
     }
-
+    
 }

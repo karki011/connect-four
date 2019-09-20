@@ -12,8 +12,7 @@ function checkForWin() {
             for (row = 0; row < 6; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row][col + 1] == i) && (gameboard[row][col + 2] == i) && (gameboard[row][col + 3] == i)) {
-                        endGame(i);
-                        return true; //game is over.
+                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true; //game is over.
                     }
                 }
             }
@@ -27,8 +26,7 @@ function checkForWin() {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col] == i) && (gameboard[row + 2][col] == i) && (gameboard[row + 3][col] == i)) {
-                        endGame(i);
-                        return true;
+                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true;
                     }
                 }
             }
@@ -40,8 +38,7 @@ function checkForWin() {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col + 1] == i) && (gameboard[row + 2][col + 2] == i) && (gameboard[row + 3][col + 3] == i)) {
-                        endGame(i);
-                        return true;
+                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true;
                     }
                 }
             }
@@ -53,7 +50,7 @@ function checkForWin() {
             for (row = 3; row <= 5; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row - 1][col + 1] == i) && (gameboard[row - 2][col + 2] == i) && (gameboard[row - 3][col + 3] == i)) {
-                        endGame(i);
+                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");
                         return true;
                     }
                 }

@@ -8,9 +8,7 @@
 function drawBoard() {
     console.log("finish drawBoard(). ");
     checkForWin(); //check to see if any player has won.
-    diskCount++;
-    console.log('diskCount++;:', diskCount++)
-    console.log('checkForWin():', checkForWin())
+
     for (col = 0; col<=6; col++) {
         for (row=0; row<=5; row++) {
             //Set the inner HTML of the square (a td) to be a span with the class of 'piece' and 'player' + the value of that 
