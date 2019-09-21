@@ -6,8 +6,12 @@
 // | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
 
 function drawBoard() {
-    console.log("finish drawBoard(). ");
-    checkForWin(); //check to see if any player has won.
+    // console.log("finish drawBoard(). ");
+    let drop =document.querySelector('.drop');
+     //check to see if any player has won.
+    if(checkForWin()){
+        drop.removeEventListener('click', drop, false)
+    }
 
     for (col = 0; col<=6; col++) {
         for (row=0; row<=5; row++) {

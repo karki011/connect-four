@@ -12,7 +12,8 @@ function checkForWin() {
             for (row = 0; row < 6; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row][col + 1] == i) && (gameboard[row][col + 2] == i) && (gameboard[row][col + 3] == i)) {
-                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true; //game is over.
+                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        return true; //game is over.
                     }
                 }
             }
@@ -26,19 +27,21 @@ function checkForWin() {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col] == i) && (gameboard[row + 2][col] == i) && (gameboard[row + 3][col] == i)) {
-                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true;
+                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        return true;
                     }
                 }
             }
         }
     }
-//check diagnol down
+    //check diagnol down
     for (i = 1; i <= 2; i++) {
         for (col = 0; col < 4; col++) {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col + 1] == i) && (gameboard[row + 2][col + 2] == i) && (gameboard[row + 3][col + 3] == i)) {
-                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");                        return true;
+                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        return true;
                     }
                 }
             }
@@ -50,7 +53,7 @@ function checkForWin() {
             for (row = 3; row <= 5; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row - 1][col + 1] == i) && (gameboard[row - 2][col + 2] == i) && (gameboard[row - 3][col + 3] == i)) {
-                        endGame(" <span id='display' class='player"+active_player+"'>" +"_" + "</span>");
+                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
                         return true;
                     }
                 }
@@ -58,8 +61,14 @@ function checkForWin() {
         }
     }
     //tie check
-    if(diskCount === 85){
-        alert('Tie ')
+    if (diskCount === 105) {
+        console.log("tie");
+        document.querySelector(".endgame").style.display = "block";
+        document.getElementById('text').innerHTML =
+            "Its a tie game!" + "</br>" +
+            "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
+        game_active = false;
+
     }
 
 }

@@ -29,14 +29,15 @@ function beginGame() {
 
 
 function endGame(winningPlayer) {
-    console.log("Inside endGame function().");
+    // console.log("Inside endGame function().");
     document.querySelector(".endgame").style.display = "block";
     document.getElementById('text').innerHTML = "Winner:  " + winningPlayer;
     document.getElementById('text').innerHTML = 
     "Winner:  "+ 
     winningPlayer + "</br>"+
     "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
-
     game_active = false;
+    console.log("diskcount" +diskCount);
+    
 
 }

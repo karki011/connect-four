@@ -1,7 +1,7 @@
 
 function drop(col) {
     for (row=5; row>=0; row--) {
-        console.log("dropping disc");
+        // console.log("dropping disc");
         if (gameboard[row][col] == 0) {
             gameboard[row][col] = active_player;
             drawBoard();
@@ -13,6 +13,7 @@ function drop(col) {
             setUpTurn();
             return true;
         } 
+        diskCount++;
     }
     
 }
