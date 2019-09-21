@@ -38,6 +38,8 @@ function endGame(winningPlayer) {
     "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
     game_active = false;
     console.log("diskcount" +diskCount);
+    document.getElementById('drop').removeAttribute("onclick");
+
     
 
 }
