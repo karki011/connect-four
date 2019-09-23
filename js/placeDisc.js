@@ -15,5 +15,4 @@ function placeDisc(col) {
         } 
         diskCount++;
     }
-    
 }

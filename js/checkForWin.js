@@ -13,11 +13,6 @@ function checkForWin() {
                 }
             }
         }
-    }
-
-    //check verticle
-    for (i = 1; i <= 2; i++) {
-
         for (col = 0; col < 7; col++) {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
@@ -28,9 +23,6 @@ function checkForWin() {
                 }
             }
         }
-    }
-    //check diagnol down
-    for (i = 1; i <= 2; i++) {
         for (col = 0; col < 4; col++) {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
@@ -41,9 +33,6 @@ function checkForWin() {
                 }
             }
         }
-    }
-    //check diagnol up
-    for (i = 1; i <= 2; i++) {
         for (col = 0; col <= 3; col++) {
             for (row = 3; row <= 5; row++) {
                 if (gameboard[row][col] == i) {
@@ -55,6 +44,7 @@ function checkForWin() {
             }
         }
     }
+
     //tie check
     if (diskCount === 105) {
         console.log("tie");
@@ -66,7 +56,6 @@ function checkForWin() {
         document.getElementById('placeDisc').removeAttribute("onclick");
 
     }
-
 }
 
 // win condition reference
