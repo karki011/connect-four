@@ -1,7 +1,6 @@
 
 
 function checkForWin() {
-    //check horizontal
     for (i = 1; i < 3; i++) {
         for (col = 0; col < 4; col++) {
             for (row = 0; row < 6; row++) {
