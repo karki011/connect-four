@@ -10,7 +10,7 @@ let diskCount = 0;
 
 
 function startGame() {
-    document.querySelector(".endgame").style.display = "none";
+    document.querySelector(".gameOver").style.display = "none";
     if (isPlaying == true) return false;
     isPlaying = true;
     for (let row = 0; row <= 5; row++) {
@@ -25,9 +25,9 @@ function startGame() {
 }
 
 
-function endGame(winningPlayer) {
-    // console.log("Inside endGame function().");
-    document.querySelector(".endgame").style.display = "block";
+function gameOver(winningPlayer) {
+    // console.log("Inside gameOver function().");
+    document.querySelector(".gameOver").style.display = "block";
     document.getElementById('text').innerHTML = "Winner:  " + winningPlayer;
     document.getElementById('text').innerHTML = 
     "Winner:  "+ 

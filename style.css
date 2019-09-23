@@ -162,7 +162,7 @@ td {
     width: 50px;
 }
 
-.endgame {
+.gameOver {
     display: none;
     width: 450px;
     top: 35%;
