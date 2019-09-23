@@ -8,10 +8,9 @@ let diskCount = 0;
 
 
 
-
 function startGame() {
     document.querySelector(".gameOver").style.display = "none";
-    if (isPlaying == true) return false;
+    if (isPlaying == true){return false };
     isPlaying = true;
     for (let row = 0; row <= 5; row++) {
         gameboard[row] = [];
@@ -35,8 +34,5 @@ function gameOver(winningPlayer) {
     "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
     isPlaying = false;
     console.log("diskcount" +diskCount);
-    document.getElementById('drop').removeAttribute("onclick");
-
-    
-
+    document.getElementById('placeDisc').removeAttribute("onclick");
 }

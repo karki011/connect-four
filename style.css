@@ -39,7 +39,7 @@ button {
 }
 
 td {
-    background-color: #224c52
+    background-color: #b6c8d4
 }
 
 #begin_game {
@@ -86,12 +86,12 @@ td {
     margin: 0 auto;
 }
 
-.drop {
+.placeDisc {
     width: -webkit-fill-available;
     border-radius: 4px;
 }
 
-.drop:hover {
+.placeDisc:hover {
     box-shadow: 0 0 14px #0bc7e0;
 }
 

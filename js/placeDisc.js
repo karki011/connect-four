@@ -1,7 +1,7 @@
 
-function drop(col) {
+function placeDisc(col) {
     for (row=5; row>=0; row--) {
-        // console.log("dropping disc");
+        // console.log("placeDiscping disc");
         if (gameboard[row][col] == 0) {
             gameboard[row][col] = currentPlayer;
             gameBoard();
