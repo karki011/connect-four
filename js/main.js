@@ -1,6 +1,6 @@
 let gameboard = [];
 let game_active = false;
-let active_player = 0;
+let currentPlayer = 0;
 let player_color = []; 
 player_color[1] = "Matt";
 player_color[2] = "Chok";
@@ -23,7 +23,7 @@ function startGame() {
         }
     }
     drawBoard();
-    active_player = 1;
+    currentPlayer = 1;
     turnInfo();
 }
 

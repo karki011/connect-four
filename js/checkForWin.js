@@ -1,9 +1,4 @@
-// // | 0,0 | 0,1 | 0,2 | 0,3 | 0,4 | 0,5 | 0,6 |
-// // | 1,0 | 1,1 | 1,2 | 1,3 | 1,4 | 1,5 | 1,6 |
-// // | 2,0 | 2,1 | 2,2 | 2,3 | 2,4 | 2,5 | 2,6 |
-// // | 3,0 | 3,1 | 3,2 | 3,3 | 3,4 | 3,5 | 3,6 |
-// // | 4,0 | 4,1 | 4,2 | 4,3 | 4,4 | 4,5 | 4,6 |
-// // | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
+
 
 function checkForWin() {
     //check horizontal
@@ -12,7 +7,7 @@ function checkForWin() {
             for (row = 0; row < 6; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row][col + 1] == i) && (gameboard[row][col + 2] == i) && (gameboard[row][col + 3] == i)) {
-                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        endGame(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
                         return true; //game is over.
                     }
                 }
@@ -27,7 +22,7 @@ function checkForWin() {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col] == i) && (gameboard[row + 2][col] == i) && (gameboard[row + 3][col] == i)) {
-                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        endGame(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
                         return true;
                     }
                 }
@@ -40,7 +35,7 @@ function checkForWin() {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row + 1][col + 1] == i) && (gameboard[row + 2][col + 2] == i) && (gameboard[row + 3][col + 3] == i)) {
-                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        endGame(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
                         return true;
                     }
                 }
@@ -53,7 +48,7 @@ function checkForWin() {
             for (row = 3; row <= 5; row++) {
                 if (gameboard[row][col] == i) {
                     if ((gameboard[row - 1][col + 1] == i) && (gameboard[row - 2][col + 2] == i) && (gameboard[row - 3][col + 3] == i)) {
-                        endGame(" <span id='display' class='player" + active_player + "'>" + "_" + "</span>");
+                        endGame(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
                         return true;
                     }
                 }
@@ -74,5 +69,5 @@ function checkForWin() {
 
 }
 
-// got win condition reference
+// win condition reference
 // https://stackoverflow.com/questions/33181356/connect-four-game-checking-for-wins-js
