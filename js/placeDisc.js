@@ -4,7 +4,7 @@ function drop(col) {
         // console.log("dropping disc");
         if (gameboard[row][col] == 0) {
             gameboard[row][col] = currentPlayer;
-            drawBoard();
+            gameBoard();
             if (currentPlayer == 1) {
                 currentPlayer = 2;
             } else {

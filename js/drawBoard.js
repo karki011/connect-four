@@ -5,8 +5,8 @@
 // | 4,0 | 4,1 | 4,2 | 4,3 | 4,4 | 4,5 | 4,6 |
 // | 5,0 | 5,1 | 5,2 | 5,3 | 5,4 | 5,5 | 5,6 |
 
-function drawBoard() {
-    // console.log("finish drawBoard(). ");
+function gameBoard() {
+    // console.log("finish gameBoard(). ");
     let drop =document.querySelector('.drop');
      //check to see if any player has won.
     if(checkForWin()){

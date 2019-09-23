@@ -19,7 +19,7 @@ function startGame() {
             gameboard[row][col] = 0;
         }
     }
-    drawBoard();
+    gameBoard();
     currentPlayer = 1;
     turnInfo();
 }
