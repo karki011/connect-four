@@ -1,8 +1,7 @@
 
-
 function checkForWin() {
-    for (i = 1; i < 3; i++) {
-        for (col = 0; col < 4; col++) {
+    for (let i = 1; i < 3; i++) {
+        for (let col = 0; col < 4; col++) {
             for (row = 0; row < 6; row++) {
                 if (gameboard[row][col] === i) {
                     if ((gameboard[row][col + 1] === i) && (gameboard[row][col + 2] === i) && (gameboard[row][col + 3] === i)) {
@@ -12,8 +11,8 @@ function checkForWin() {
                 }
             }
         }
-        for (col = 0; col < 7; col++) {
-            for (row = 0; row < 3; row++) {
+        for (let col = 0; col < 7; col++) {
+            for (let row = 0; row < 3; row++) {
                 if (gameboard[row][col] === i) {
                     if ((gameboard[row + 1][col] === i) && (gameboard[row + 2][col] === i) && (gameboard[row + 3][col] === i)) {
                         gameOver(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
@@ -22,7 +21,7 @@ function checkForWin() {
                 }
             }
         }
-        for (col = 0; col < 4; col++) {
+        for (let col = 0; col < 4; col++) {
             for (row = 0; row < 3; row++) {
                 if (gameboard[row][col] === i) {
                     if ((gameboard[row + 1][col + 1] === i) && (gameboard[row + 2][col + 2] === i) && (gameboard[row + 3][col + 3] === i)) {
@@ -32,8 +31,8 @@ function checkForWin() {
                 }
             }
         }
-        for (col = 0; col <= 3; col++) {
-            for (row = 3; row <= 5; row++) {
+        for (let col = 0; col <= 3; col++) {
+            for (let row = 3; row <= 5; row++) {
                 if (gameboard[row][col] === i) {
                     if ((gameboard[row - 1][col + 1] === i) && (gameboard[row - 2][col + 2] === i) && (gameboard[row - 3][col + 3] === i)) {
                         gameOver(" <span id='display' class='player" + currentPlayer + "'>" + "_" + "</span>");
@@ -43,7 +42,6 @@ function checkForWin() {
             }
         }
     }
-
     //tie check
     if (diskCount ==== 105) {
         console.log("tie");
