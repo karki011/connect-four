@@ -24,7 +24,7 @@ function startGame() {
     }
     drawBoard();
     active_player = 1;
-    setUpTurn();
+    turnInfo();
 }
 
 

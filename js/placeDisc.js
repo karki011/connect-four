@@ -10,7 +10,7 @@ function drop(col) {
             } else {
                 active_player = 1;
             } 
-            setUpTurn();
+            turnInfo();
             return true;
         } 
         diskCount++;
