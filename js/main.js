@@ -9,7 +9,7 @@ let diskCount = 0;
 
 
 
-function beginGame() {
+function startGame() {
     document.querySelector(".endgame").style.display = "none";
 
     if (game_active == true) return false;
