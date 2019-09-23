@@ -62,7 +62,7 @@ function checkForWin() {
         document.getElementById('text').innerHTML =
             "Its a tie game!" + "</br>" +
             "<button id='reset' onClick='document.location.reload(true)'>Play again</button>";
-        game_active = false;
+        isPlaying = false;
         document.getElementById('drop').removeAttribute("onclick");
 
     }
